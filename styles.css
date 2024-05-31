@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 40px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+ 
+    
+        background-image: url('BG4.jpg');
+        background-size: cover;
+        background-position: center;
+
+}
+
+h1 {
+    color: #fff;
+}
+
+.left-side {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    width: 800px;
+    padding-left: 50px; 
+    padding-right: 50px;
+    height: 230px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+#output {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background-color: #222;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode #output {
+    border-color: #555;
+    color: #fff;
+}
+
+.dark-mode #noteInput {
+    border-color: #555;
+    color: #eee; 
+    background-color: #333;
+}

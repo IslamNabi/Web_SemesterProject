@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keep Notes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Keep Your Notes Secure</h1>
+        <div id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginButton">Login</button>
+            <button id="signUpButton">Sign Up</button>
+        </div>
+        <div id="noteSection" class="note-container hidden">
+            <textarea id="noteInput" placeholder="Enter your secure note here..."></textarea>
+            <div class="right-side">
+                <button id="saveButton">Save Note</button>
+                <button id="darkModeToggle">Enable Dark Mode</button>
+                <button id="disableDarkModeToggle">Disable Dark Mode</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script> document.getElementById('disableDarkModeToggle').style.display = 'none';</script>
+    <script src="script.js"></script>
+</body>
+</html>
